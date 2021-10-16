@@ -7,4 +7,7 @@ APK: https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40golden-o
 Expo: https://expo.dev/@golden-ogbeka/Dating-App
 
 ## Development Note
-This project shows only the structure of the app. The login button switches to the Messages page. Then pressing any tab in the messages page takes you back to the login page
+This project shows only the structure of the app. 
+
+## App Flow
+The login button switches to the Messages page. Then pressing any tab in the messages page takes you back to the login page
