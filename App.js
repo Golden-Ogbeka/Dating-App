@@ -1,18 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {
-	KeyboardAvoidingView,
-	Platform,
-	StyleSheet,
-	Text,
-	View,
-} from 'react-native';
+import { KeyboardAvoidingView, Platform, StyleSheet, Text, View } from 'react-native';
 import Login from './pages/Login';
 import { Provider as PaperProvider } from 'react-native-paper';
 import Messages from './pages/Messages';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Spaces from './pages/Spaces';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -21,8 +16,8 @@ export default function App() {
 	return (
 		<PaperProvider>
 			<KeyboardAvoidingView
-				style={styles.container}
 				behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+				style={styles.container}
 			>
 				<StatusBar style='auto' />
 				<NavigationContainer>
@@ -39,6 +34,7 @@ export default function App() {
 							component={Messages}
 							options={{ headerShown: false }}
 						/>
+						<Stack.Screen name='Spaces' component={Spaces} options={{ headerShown: false }} />
 					</Stack.Navigator>
 				</NavigationContainer>
 			</KeyboardAvoidingView>

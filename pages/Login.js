@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-	View,
-	Text,
-	StyleSheet,
-	ImageBackground,
-	Image,
-	ScrollView,
-} from 'react-native';
+import { View, Text, StyleSheet, ImageBackground, Image, ScrollView } from 'react-native';
 import { Button, TextInput } from 'react-native-paper';
 // const image = { uri: 'https://reactjs.org/logo-og.png' };
 import backgroundImage from '../assets/background.jpg';
@@ -14,11 +7,7 @@ import LogoImage from '../assets/logo.png';
 
 export default function Login(props) {
 	return (
-		<ImageBackground
-			source={backgroundImage}
-			style={styles.background}
-			resizeMode='cover'
-		>
+		<ImageBackground source={backgroundImage} style={styles.background} resizeMode='cover'>
 			<ScrollView style={styles.container}>
 				<View
 					style={{
@@ -35,6 +24,21 @@ export default function Login(props) {
 						resizeMode='contain'
 					/>
 					{/* <Text>Find love here</Text> */}
+					<View>
+						<Button
+							mode='contained'
+							style={{
+								padding: 10,
+								marginLeft: 20,
+								marginRight: 20,
+							}}
+							onPress={() => props.navigation.navigate('Spaces')}
+							color='#FFF'
+							// dark
+						>
+							View Spaces
+						</Button>
+					</View>
 				</View>
 				<View
 					style={{

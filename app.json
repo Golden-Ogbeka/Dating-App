@@ -6,7 +6,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "description": "A basic structure of a dating app",
+    "description": "Basic pages for a dating app",
     "githubUrl": "https://github.com/Golden-Ogbeka/Dating-App",
     "android": {
       "package": "com.goldenogbeka.DatingApp"
